@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ludo Game by SIBTAIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="ludo.js"></script>
+</head>
+
+<body>
+    <div class="headline"> 
+        <center>
+            <h1>
+               <p style="color:indigo">
+                    LUDO GAME
+                </p>
+            </h1>
+            <h2>
+                <br> M SIBTAIN ASAD
+            </h2>
+        </center>
+    </div>
+    <div id ="hdl"class="headline2"> 
+         The Game is Starting ... 
+    </div>
+    <div id ="runs" class="runs"> 
+        <h4>
+            WON Pieces
+        </h4>
+        <br>
+        <span class="gpe" id = "gpe"> GREEN = 0 </span> 
+        <span class="ype" id = "ype"> YELLOW = 0 </span> 
+        <br><br>
+        <span class="rpe" id = "rpe"> RED = 0 </span> 
+        <span class="bpe" id = "bpe"> BLUE = 0 </span> 
+   </div>
+
+    <div class="game">
+	 <div class="container">
+	 	 <div class="container-row1 setOrientation">
+            <div class="row1-col1 green">
+                <div class="row1-col1-child setOrientation white">
+                    <div id="gb0" class="green"></div>
+                    <div id="gb1" class="green"></div>
+                    <div id="gb2" class="green"></div>
+                    <div id="gb3" class="green"></div>
+                </div>
+            </div>
+            <div class="row1-col2 setOrientation">
+                <div id="y5"  class="blc"></div>
+                <div id="y17" class="blc"></div>
+                <div id="y6"  class="blc"></div>
+                <div id="y4"  class="blc"></div>
+                <div id="y16" class="blc yellow"></div>
+                <div id="y7"  class="blc yellow"></div>
+                <div id="y3"  class="blc"></div>
+                <div id="y15" class="blc yellow"></div>
+                <div id="y8"  class="blc"></div>
+                <div id="y2"  class="blc yellow"></div>
+                <div id="y14" class="blc yellow"></div>
+                <div id="y9"  class="blc"></div>
+                <div id="y1"  class="blc"></div>
+                <div id="y13" class="blc yellow"></div>
+                <div id="y10" class="blc"></div>
+                <div id="y0"  class="blc"></div>
+                <div id="y12" class="blc yellow"></div>
+                <div id="y11" class="blc"></div>
+            </div>
+            <div class="row1-col3 yellow">
+                <div class="row1-col3-child setOrientation white">
+                    <div id="yb0" class="yellow"></div>
+                    <div id="yb1" class="yellow"></div>
+                    <div id="yb2" class="yellow"></div>
+                    <div id="yb3" class="yellow"></div>
+                </div>
+            </div>
+        </div>
+
+	 <!-- Second row -->
+        <div class="container-row2 setOrientation">
+            <div class="row2-col1 setOrientation">
+                <div id="g0" class="blc"></div>
+                <div id="g1" class="blc green"></div>
+                <div id="g2" class="blc"></div>
+                <div id="g3" class="blc"></div>
+                <div id="g4" class="blc"></div>
+                <div id="g5" class="blc"></div>
+                <div id="g12" class="blc"></div>
+                <div id="g13" class="blc green"></div>
+                <div id="g14" class="blc green"></div>
+                <div id="g15" class="blc green"></div>
+                <div id="g16" class="blc green"></div>
+                <div id="g17" class="blc green"></div>
+                <div id="g11" class="blc"></div>
+                <div id="g10" class="blc"></div>
+                <div id="g9" class="blc"></div>
+                <div id="g8" class="blc green"></div>
+                <div id="g7" class="blc"></div>
+                <div id="g6" class="blc"></div>
+            </div>
+            <div class="row2-col2">
+                <div>
+                    <i class="bi bi-dice-6-fill"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dice-6" viewBox="0 0 16 16">
+                        <path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/>
+                        <path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-8 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                      </svg>
+                </div>
+            </div>
+            <div class="row2-col3 setOrientation">
+                <div id="b0"  class="blc"></div>
+                <div id="b1"  class="blc"></div>
+                <div id="b2"  class="blc blue"></div>
+                <div id="b3"  class="blc"></div>
+                <div id="b4"  class="blc"></div>
+                <div id="b5"  class="blc"></div>
+                <div id="b12" class="blc blue"></div>
+                <div id="b13" class="blc blue"></div>
+                <div id="b14" class="blc blue"></div>
+                <div id="b15" class="blc blue"></div>
+                <div id="b16" class="blc blue"></div>
+                <div id="b17" class="blc"></div>
+                <div id="b11" class="blc"></div>
+                <div id="b10" class="blc"></div>
+                <div id="b9"  class="blc"></div>
+                <div id="b8"  class="blc"></div>
+                <div id="b7"  class="blc blue"></div>
+                <div id="b6"  class="blc"></div>
+            </div>
+        </div>
+
+  <!-- Third row -->
+        <div class="container-row3 setOrientation">
+            <div class="row3-col1 red">
+                <div class="row3-col1-child setOrientation white">
+                    <div id="rb0" class="red"></div>
+                    <div id="rb1" class="red"></div>
+                    <div id="rb2" class="red"></div>
+                    <div id="rb3" class="red"></div>
+                </div>
+            </div>
+            <div class="row3-col2 setOrientation">
+                <div id="r5" class="blc"></div>
+                <div id="r17" class="blc red"></div>
+                <div id="r6" class="blc"></div>
+                <div id="r4" class="blc"></div>
+                <div id="r16" class="blc red"></div>
+                <div id="r7" class="blc"></div>
+                <div id="r3" class="blc"></div>
+                <div id="r15" class="blc red"></div>
+                <div id="r8" class="blc red"></div>
+                <div id="r2" class="blc"></div>
+                <div id="r14" class="blc red"></div>
+                <div id="r9" class="blc"></div>
+                <div id="r1" class="blc red"></div>
+                <div id="r13" class="blc red"></div>
+                <div id="r10" class="blc" ></div>
+                <div id="r0" class="blc"></div>
+                <div id="r12" class="blc"></div>
+                <div id="r11" class="blc"></div>
+            </div>
+            <div class="row3-col3 blue">
+                <div class="row3-col3-child setOrientation white">
+                    <div id="bb0" class="blue"></div>
+                    <div id="bb1" class="blue"></div>
+                    <div id="bb2" class="blue"></div>
+                    <div id="bb3" class="blue"></div>
+                </div>
+            </div>
+        </div>
+
+	 </div>
+
+
+        <div class="animation" style="background-image:url(dice1.jpg); background-size:contain; width:150px;height:150px; margin-left: 50px;">      
+            <br><br><br><br><br><br><br><br>
+            <div class="table" style="float: none; margin-left: 40px;">
+                <p id="table1" class="table1">Roll the Dice to Start the Game</p>
+                <br>
+                <div id="tbox" class="tbox"> - </div>
+                <br>
+                <p id="table2" class="table2">Its RED's turn</p>
+            </div>
+            <div style="float: none; margin-left: 50px;">
+                <button class="dice" onclick="rollDice()"> ROLL </button>
+            </div>
+
+        </div>
+        
+        </div>
+</body>
+</html>
